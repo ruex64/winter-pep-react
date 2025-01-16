@@ -1,0 +1,23 @@
+body{
+    /* background-color: black; */
+    color: azure;
+    font-family: 'Times New Roman', Times, serif;
+    margin-left: 20px;
+    background: radial-gradient(circle at center, #0f0f0f, #1a1a1a, #000000);
+}
+.ig{
+    height: 620px;
+    width: 1180px;
+    border-radius: 10px;
+    border: solid 5px white;
+    margin-bottom: 50px;
+}
+.head{
+    font-size: 64px;
+}
+.det{
+    font-size: 34px;
+}
+.headd{
+    font-size: 32px;
+}
