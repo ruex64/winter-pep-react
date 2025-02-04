@@ -1,0 +1,110 @@
+/* Project Section */
+#projects {
+    text-align: center;
+    padding: 80px 20px;
+  }
+  
+  /* Projects Grid */
+  .projects-container {
+    display: flex;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  /* Project Card */
+  .project-card {
+    background: #1E1E1E;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .project-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  /* Project Image (Banner) */
+  .project-image {
+    width: 100%;
+    max-height: 405px; /* 720p aspect ratio: 1280x720 */
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  
+  /* Project Title */
+  .project-title {
+    font-size: 1.8rem;
+    margin: 15px 0;
+  }
+  
+  /* Project Tags */
+  .project-tags {
+    margin-bottom: 15px;
+  }
+  
+  .tag {
+    background: #333;
+    color: #E0E0E0;
+    padding: 5px 12px;
+    margin: 5px;
+    border-radius: 6px;
+    font-size: 1rem;
+    display: inline-block;
+  }
+  
+  /* Read More Button */
+  .btn:hover {
+    background-color: #555;
+    color: #FFD700;
+  } 
+  
+  .btn {
+      appearance: button;
+      background-color: #333;
+      background-image: none;
+      border: 1px solid #fff;
+      border-radius: 4px;
+      box-shadow: #fff 4px 4px 0 0,#000 4px 4px 0 1px;
+      box-sizing: border-box;
+      color: #E0E0E0;
+      cursor: pointer;
+      display: inline-block;
+      margin: 0 5px 10px 0;
+      overflow: visible;
+      padding: 12px 40px;
+      text-align: center;
+      text-transform: none;
+      touch-action: manipulation;
+      user-select: none;
+      -webkit-user-select: none;
+      vertical-align: middle;
+      white-space: nowrap;
+    }
+    
+    .btn:focus {
+      text-decoration: none;
+    }
+    
+    .btn:hover {
+      text-decoration: none;
+    }
+    
+    .btn:active {
+      box-shadow: rgba(0, 0, 0, .125) 0 3px 5px inset;
+      outline: 0;
+    }
+    
+    .btn:not([disabled]):active {
+      box-shadow: #FFD700 2px 2px 0 0, #000 2px 2px 0 1px;
+      transform: translate(2px, 2px);
+    }
+    
+    @media (min-width: 768px) {
+      .btn {
+        padding: 12px 50px;
+      }
+    }

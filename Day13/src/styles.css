@@ -1,0 +1,368 @@
+/* Importing Ultra & PT Serif Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Ultra&family=PT+Serif&display=swap');
+
+/* Global Styles */
+body {
+  background-color: #121212;
+  color: #E0E0E0;
+  font-family: "PT Serif", serif;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  overflow-x: hidden;
+}
+
+/* Heading Typography */
+h1, h2, h3 {
+  font-family: "Ultra", serif;
+  margin-bottom: 20px;
+}
+
+/* Centering Elements */
+.section {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  transition: all 0.5s ease-in-out;
+}
+
+/* Buttons */
+/* .btn {
+  background-color: #333;
+  color: #E0E0E0;
+  padding: 12px 24px;
+  border: 2px solid #E0E0E0;
+  border-radius: 8px;
+  cursor: pointer;
+  margin: 10px;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: 0.3s;
+}
+*/
+.btn:hover {
+  background-color: #555;
+  color: #FFD700;
+} 
+
+.btn {
+    appearance: button;
+    background-color: #333;
+    background-image: none;
+    border: 1px solid #fff;
+    border-radius: 4px;
+    box-shadow: #fff 4px 4px 0 0,#000 4px 4px 0 1px;
+    box-sizing: border-box;
+    color: #E0E0E0;
+    cursor: pointer;
+    display: inline-block;
+    margin: 0 5px 10px 0;
+    overflow: visible;
+    padding: 12px 40px;
+    text-align: center;
+    text-transform: none;
+    touch-action: manipulation;
+    user-select: none;
+    -webkit-user-select: none;
+    vertical-align: middle;
+    white-space: nowrap;
+  }
+  
+  .btn:focus {
+    text-decoration: none;
+  }
+  
+  .btn:hover {
+    text-decoration: none;
+  }
+  
+  .btn:active {
+    box-shadow: rgba(0, 0, 0, .125) 0 3px 5px inset;
+    outline: 0;
+  }
+  
+  .btn:not([disabled]):active {
+    box-shadow: #FFD700 2px 2px 0 0, #000 2px 2px 0 1px;
+    transform: translate(2px, 2px);
+  }
+  
+  @media (min-width: 768px) {
+    .btn {
+      padding: 12px 50px;
+    }
+  }
+
+/* Hover Effects */
+.icon {
+  font-size: 40px;
+  margin: 15px;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.icon:hover {
+  transform: scale(2);
+  color: #FFD700;
+}
+
+/* Skills Section - Grid Layout */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+  gap: 20px;
+  justify-items: center;
+  max-width: 500px;
+  width: 100%;
+}
+
+/* Skill Icons */
+.skills-grid i {
+  font-size: 60px;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.skills-grid i:hover {
+  transform: scale(1.5);
+  color: #FFD700;
+}
+
+/* Project Cards */
+.project-card {
+  background-color: #222;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  transition: 0.3s ease-in-out;
+  max-width: 350px;
+  margin: 20px auto;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  background-color: #333;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+  }
+  .btn {
+    font-size: 0.9rem;
+    padding: 10px 20px;
+  }
+  .icon {
+    font-size: 30px;
+  }
+  .skills-grid {
+    grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
+  }
+}
+
+@media screen and (max-width: 480px) {
+  h1 {
+    font-size: 1.8rem;
+  }
+  h2 {
+    font-size: 1.5rem;
+  }
+  p {
+    font-size: 0.9rem;
+  }
+  .btn {
+    font-size: 0.8rem;
+    padding: 8px 16px;
+  }
+  .icon {
+    font-size: 25px;
+  }
+  .skills-grid {
+    grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+  }
+}
+/* About Section */
+#about {
+    text-align: center;
+    max-width: 800px;
+    margin: auto;
+    padding: 40px 20px;
+  }
+  
+  .skills-list {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+    display: inline-block;
+  }
+  
+  .skills-list li {
+    font-size: 1.2rem;
+    padding: 5px 0;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .skills-list li:hover {
+    transform: translateX(5px);
+    color: #FFD700;
+  }
+  
+  /* Rough Notation Enhancements */
+  .rough-notation {
+    display: inline-block;
+    padding: 5px;
+  }
+
+
+  /* Skills Section */
+#skills {
+    text-align: center;
+    padding: 50px 20px;
+  }
+  
+  .skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+    gap: 20px;
+    justify-content: center;
+    max-width: 600px;
+    margin: auto;
+  }
+  
+  .skill-icon {
+    font-size: 3rem; /* Adjust icon size */
+    color: #E0E0E0; /* Default icon color */
+    transition: transform 0.3s ease, color 0.3s ease;
+  }
+  
+  .skill-icon:hover {
+    transform: scale(1.2); /* Slightly enlarge the icon */
+    color: #FFD700; /* Change color on hover */
+  }
+  /* About Section */
+#about {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+/* Ensures annotations wrap correctly */
+.annotated-text {
+  display: inline-block;
+}
+
+/* Adjustments for different screen sizes */
+@media (max-width: 768px) {
+  .annotated-text {
+    padding: 2px;
+  }
+}
+
+
+
+
+/*typography*/
+
+/* Global Styles */
+body {
+  font-family: "PT Serif", serif;
+  background-color: #121212;
+  color: #E0E0E0;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  line-height: 1.75; /* Improved readability */
+}
+
+/* Golden Ratio Font Scaling */
+:root {
+  --base-font-size: 1rem; /* Base size for small screens */
+  --h1-size: calc(var(--base-font-size) * 2.618);
+  --h2-size: calc(var(--base-font-size) * 1.618);
+  --h3-size: calc(var(--base-font-size) * 1.382);
+  --p-size: calc(var(--base-font-size) * 1);
+  --small-size: calc(var(--base-font-size) * 0.85);
+}
+
+/* Responsive Typography using Golden Ratio */
+h1 {
+  font-family: "Ultra", serif;
+  font-size: var(--h1-size);
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-family: "Ultra", serif;
+  font-size: var(--h2-size);
+  margin-bottom: 15px;
+}
+
+h3 {
+  font-family: "Ultra", serif;
+  font-size: var(--h3-size);
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: var(--p-size);
+  max-width: 800px;
+  margin: 0 auto 15px;
+}
+
+small {
+  font-size: var(--small-size);
+}
+
+/* Responsive Font Scaling */
+@media (min-width: 768px) {
+  :root {
+    --base-font-size: 1.2rem; /* Slightly larger base size for tablets */
+  }
+}
+
+@media (min-width: 1024px) {
+  :root {
+    --base-font-size: 1.4rem; /* Increase for larger screens */
+  }
+}
+
+@media (min-width: 1440px) {
+  :root {
+    --base-font-size: 1.6rem; /* Perfect for large desktops */
+  }
+}
+
+/* Sections Styling */
+.section {
+  padding: 80px 20px;
+}
+
+/* Landing Section */
+#landing h1 {
+  font-size: var(--h1-size);
+}
+
+.typed-text {
+  font-size: var(--h3-size);
+  font-weight: bold;
+}
+
+/* About Section */
+#about p {
+  font-size: var(--p-size);
+}
+
+/* Skills Section */
+#skills .skill-icon {
+  font-size: calc(var(--base-font-size) * 2); /* Adjusted size for skills icons */
+}
+
+/* Projects Section */
+.project-card {
+  font-size: var(--p-size);
+}
+
+/* Contact Section */
+#contact .contact-icon {
+  font-size: calc(var(--base-font-size) * 1.5);
+}
