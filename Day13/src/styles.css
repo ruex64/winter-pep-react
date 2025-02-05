@@ -3,7 +3,8 @@
 
 /* Global Styles */
 body {
-  background-color: #121212;
+  /* background-color: #121212; */
+  background-image: linear-gradient(to right top, #1d1616, #241d1b, #2a2420, #302b26, #35332d, #46433d, #57534e, #686460, #898482, #aaa6a6, #cbc9ca, #eeeeee);
   color: #E0E0E0;
   font-family: "PT Serif", serif;
   margin: 0;
